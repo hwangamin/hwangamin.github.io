@@ -1,4 +1,4 @@
-<a class="post-card" href="{{ post.url | relative_url }}" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+/*<a class="post-card" href="{{ post.url | relative_url }}" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
   {% if post.featured-img %}
   <figure class="post-card__thumb">
     <img
@@ -16,16 +16,16 @@
   {% endif %}
   <div class="post-card__inner">
     <div class="post-card__header">
-      <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
+      <h2>{{ post.title | strip_html | truncate: 80 }}</h2>
       {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
       <span class="post-card__meta">
         <time>{{ post.date | date: date_format }}</time>
       </span>
     </div>
-    {% if post.summary %}
+    /*{% if post.summary %}
       <p>{{ post.summary | strip_html | truncatewords:0 }}</p>
     {% else %}
       <p>{{ post.content | strip_html | truncatewords:0 }}</p>
-    {% endif %}
+    {% endif %}*/
   </div>
 </a>
